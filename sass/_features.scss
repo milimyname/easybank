@@ -1,0 +1,39 @@
+.features{
+    background-color: var(--color-light-grayish-blue);
+    grid-row: 3 / 4;
+    grid-column: full-start / full-end;
+    padding: 6% 10%;
+    z-index: 1;
+
+    @media only screen and (max-width: 50em) {
+        display: grid;
+        justify-items: center;
+        padding: 8% 5%;
+        text-align: center;
+    }
+    
+
+    &__paragraph{
+        width: 55%;
+
+        @media only screen and (max-width: 50em) {
+            width: 100%;
+        }
+    }
+
+    &__group{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        grid-gap: 3rem;
+    }
+}
+
+.feature{
+    display: grid;
+    grid-template-rows: repeat(3, min-content);
+    grid-row-gap: 3rem;
+
+    @media only screen and (max-width: 50em) {
+        justify-items: center;
+    }
+}

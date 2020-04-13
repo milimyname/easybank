@@ -1,0 +1,112 @@
+.header{
+    background-color: var(--color-very-light-gray);
+    grid-row: 2 / 3;
+    grid-column: full-start / full-end;
+    padding-left: 10%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    @media only screen and (max-width: 50em) {
+        padding: 8% 5%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr;
+    }
+
+    &__content{
+        align-self: center;
+        justify-self: start;
+
+        display: grid;
+        grid-row: repeat(3, minmax(min-content, 1fr));
+        grid-row-gap: 3rem;
+        z-index: 1;
+
+        @media only screen and (max-width: 50em) {
+            text-align: center;
+            grid-row: 1fr;
+        }
+    }
+
+    &__paragraph{
+        width: 70%;
+
+        @media only screen and (max-width: 50em) {
+            width: 100%;
+        }
+    }
+
+    &__btn{
+        justify-self: start;
+
+        @media only screen and (max-width: 50em) {
+            justify-self: center;
+        }
+    }
+
+    &__pictures{
+        position: relative;
+
+        @media only screen and (max-width: 50em) {
+            grid-row: 1 / 2;
+        }
+    }
+
+    &__bg-desktop{
+        position: absolute;
+        right: -32rem;
+        top: 0;
+        width: 80%;
+        margin-top: -35vh;
+
+        @media only screen and (max-width: 50em) {
+            display: none;
+        }
+
+    }
+
+    &__bg-mobile{
+        display: none;
+
+        @media only screen and (max-width: 50em) {
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 100%;
+            margin-top: -55vh;
+        }
+
+        @media only screen and (max-width: 31.25em) {
+            margin-top: -25vh;
+        }
+
+        @media only screen and (max-width: 20.3125em) {
+            margin-top: -15vh;
+        }
+    }
+
+    &__img{
+        margin-top: -15vh;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 2;
+
+        @media only screen and (max-width: 50em) {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 65%;
+                margin-top: -20vh;
+        }
+
+        @media only screen and (max-width: 31.25em) {
+            width: 100%;
+            margin-top: -15vh;
+        }
+
+    }
+
+    
+}

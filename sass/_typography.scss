@@ -1,0 +1,72 @@
+%heading {
+    font-weight: 300;
+    color: var(--color-dark-blue);
+    line-height: 1.2;
+}
+
+.heading-1{
+    font-size: 5rem;
+    width: 75%;
+
+    @extend %heading;
+
+    @media only screen and (max-width: $br-land) {
+        width: 80%;
+        font-size: 4rem;
+    }
+
+    @media only screen and (max-width: 50em) {
+        width: 100%;
+        font-size: 3rem;
+    }
+}
+
+.heading-2 {
+    font-size: 3.8rem;
+    @extend %heading;
+
+    @media only screen and (max-width: 50em) {
+        width: 100%;
+        font-size: 2.4rem;
+    }
+}
+
+.heading-3{
+    font-size: 2rem;
+    @extend %heading;
+}
+
+.heading-5 {
+    font-size: 1.8rem;
+    @extend %heading;
+}
+
+.paragraph{
+    font-size: 1.6rem;
+}
+
+
+.btn{
+
+    &:visited,
+    &:link{
+        display: inline-block;
+        font-size: 1.6rem;
+        text-decoration: none;
+        padding: 1.2rem 3rem;
+        color: var(--color-white);
+        background-image: linear-gradient(to right, var(--color-lime-green), var(--color-bright-cyan));
+        border-radius: 10rem;
+        cursor: pointer;
+    }
+    
+
+    &:hover{
+        opacity: .8;
+    }
+}
+
+.mb-sm{ margin-bottom: 2rem;}
+.mb-md{ margin-bottom: 3rem;}
+.mb-bg{ margin-bottom: 4rem;}
+.mt-n{margin-top: -2.8rem;}

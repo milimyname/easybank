@@ -1,0 +1,61 @@
+:root{
+
+    --color-dark-blue: hsl(233, 26%, 24%);
+    --color-lime-green: hsl(136, 65%, 51%);
+    --color-bright-cyan: hsl(192, 70%, 51%);
+    --color-grayish-blue: hsl(233, 8%, 62%);
+    --color-light-grayish-blue: hsl(220, 16%, 96%);
+    --color-very-light-gray: hsl(0, 0%, 98%);
+    --color-white: hsl(0, 0%, 100%);
+
+    
+
+}
+
+// Responsive Breakpoints
+
+$br-largest: 75em; // 1200px / 16px 
+$br-land: 62.5em; // 1000px / 16px 
+$br-port: 50em; // 800px / 16px 
+$br-mob-md: 31.25em; // 500px / 16px 
+$br-mob-sm: 20.3125em; // 400px / 16px 
+//////
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; // 1rem = 10px
+
+    @media only screen and (max-width: $br-largest){
+        font-size: 56.25%; // 1rem = 9px
+    }
+
+    @media only screen and (max-width: $br-land) {
+        font-size: 50%; // 1rem = 8px
+    }
+}
+
+body{
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--color-grayish-blue);
+    overflow-x: hidden;
+}
+
+.container{
+    max-width: 144rem;
+    display: grid;
+    grid-template-rows: 8rem calc(100vh - 8rem) repeat(3, min-content);
+    grid-template-columns: [full-start] 1fr [center-start] repeat(4, [col-start] minmax(max-content, min-content) [col-end]) [center-end] 1fr [full-end];
+
+    
+
+}
