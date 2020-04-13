@@ -33,13 +33,19 @@ html{
     box-sizing: border-box;
     font-size: 62.5%; // 1rem = 10px
 
+    @media only screen and (max-width: $br-land) {
+        font-size: 50%; // 1rem = 8px
+    }
+
     @media only screen and (max-width: $br-largest){
         font-size: 56.25%; // 1rem = 9px
     }
 
-    @media only screen and (max-width: $br-land) {
-        font-size: 50%; // 1rem = 8px
+    @media only screen and (min-width: $br-largest) {
+        font-size: 75%; // 1rem = 12px
     }
+
+    
 }
 
 body{
@@ -51,11 +57,8 @@ body{
 }
 
 .container{
-    max-width: 144rem;
     display: grid;
-    grid-template-rows: 8rem calc(100vh - 8rem) repeat(3, min-content);
+    grid-template-rows: 8rem repeat(4, min-content);
     grid-template-columns: [full-start] 1fr [center-start] repeat(4, [col-start] minmax(max-content, min-content) [col-end]) [center-end] 1fr [full-end];
-
     
-
 }

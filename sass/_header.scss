@@ -3,28 +3,31 @@
     grid-row: 2 / 3;
     grid-column: full-start / full-end;
     padding-left: 10%;
-    position: relative;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 49rem 1fr;
 
     @media only screen and (max-width: 50em) {
-        padding: 8% 5%;
+        padding: 8% 0;
         grid-template-columns: 1fr;
-        grid-template-rows: 2fr 1fr;
+        grid-template-rows: 1fr min-content;
+        grid-row-gap: 5rem;
+        justify-items: center;
     }
+
+    
 
     &__content{
         align-self: center;
-        justify-self: start;
 
         display: grid;
-        grid-row: repeat(3, minmax(min-content, 1fr));
         grid-row-gap: 3rem;
-        z-index: 1;
 
         @media only screen and (max-width: 50em) {
             text-align: center;
-            grid-row: 1fr;
+            grid-row: 2 / 3;
+
+            width: 80%;
+            justify-content: center;
         }
     }
 
@@ -45,72 +48,82 @@
     }
 
     &__pictures{
-        position: relative;
+        background-image: url('../images/bg-intro-desktop.svg');
+        background-position: 10%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: -20vh;
 
-        @media only screen and (max-width: 50em) {
-            grid-row: 1 / 2;
-        }
-    }
-
-    &__bg-desktop{
-        position: absolute;
-        right: -32rem;
-        top: 0;
-        width: 80%;
-        margin-top: -35vh;
-
-        @media only screen and (max-width: 50em) {
-            display: none;
-        }
-
-    }
-
-    &__bg-mobile{
-        display: none;
-
-        @media only screen and (max-width: 50em) {
-            display: block;
-            position: absolute;
-            right: 0;
-            top: 0;
-            width: 100%;
-            margin-top: -50vh;
-        }
-
-        @media only screen and (max-width: 37.5em) {
+        @media only screen and (max-width: 62.5em) {
             margin-top: -30vh;
         }
 
-        @media only screen and (max-width: 25em) {
-            margin-top: -10vh;
+        @media only screen and (max-width: 50em) {
+            background-image: url('../images/bg-intro-mobile.svg');
+            margin-top: -20vh;
+            grid-row: 1 / 2;
         }
+
+        
     }
 
+    // &__bg-desktop{
+    //     position: absolute;
+    //     right: -32rem;
+    //     top: 0;
+    //     width: 80%;
+    //     margin-top: -35vh;
+
+    //     @media only screen and (max-width: 50em) {
+    //         display: none;
+    //     }
+
+    // }
+
+    // &__bg-mobile{
+    //     display: none;
+
+    //     @media only screen and (max-width: 50em) {
+    //         display: block;
+    //         position: absolute;
+    //         right: 0;
+    //         top: 0;
+    //         width: 100%;
+    //         margin-top: -50vh;
+    //     }
+
+    //     @media only screen and (max-width: 37.5em) {
+    //         margin-top: -30vh;
+    //     }
+
+    //     @media only screen and (max-width: 25em) {
+    //         margin-top: -10vh;
+    //     }
+    // }
+
     &__img{
-        margin-top: -15vh;
-        position: absolute;
-        top: 0;
-        width: 100%;
+        position: relative;
+        display: block;
+        margin-left: 20%;
+        margin-top: 10vh;
         z-index: 2;
 
-        @media only screen and (max-width: 50em) {
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                width: 65%;
-                margin-top: -20vh;
+        @media only screen and (max-width: 62.5em) {
+           margin-left: 10%;
         }
 
-        @media only screen and (max-width: 37.5em) {
-            width: 85%;
+        @media only screen and (max-width: 50em) {
+            margin-left: 0;
+            margin-top: -24vh;
+            width: 100%;
         }
 
         @media only screen and (max-width: 25em) {
-            width: 100%;
-            margin-top: -10vh;
+            margin-top: -2vh;
         }
 
     }
 
     
 }
+

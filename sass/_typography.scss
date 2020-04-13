@@ -11,8 +11,8 @@
     @extend %heading;
 
     @media only screen and (max-width: $br-land) {
-        width: 80%;
-        font-size: 4rem;
+        width: 100%;
+        font-size: 5rem;
     }
 
     @media only screen and (max-width: 50em) {
@@ -24,6 +24,10 @@
 .heading-2 {
     font-size: 3.8rem;
     @extend %heading;
+
+    @media only screen and (max-width: 62.5em) {
+        text-align: center;
+    }
 
     @media only screen and (max-width: 50em) {
         width: 100%;
@@ -43,6 +47,10 @@
 
 .paragraph{
     font-size: 1.6rem;
+
+    @media only screen and (max-width: $br-land) {
+        font-size: 2rem;
+    }
 }
 
 
@@ -58,6 +66,10 @@
         background-image: linear-gradient(to right, var(--color-lime-green), var(--color-bright-cyan));
         border-radius: 10rem;
         cursor: pointer;
+
+        @media only screen and (max-width: $br-land) {
+            font-size: 2rem;
+        }
     }
     
 

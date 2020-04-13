@@ -1,9 +1,7 @@
 .navbar{
     background-color: var(--color-white);
-    grid-row: 1 / 2;
     grid-column: full-start / full-end;
     padding: 0 10%;
-    
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -209,13 +207,5 @@
             visibility: visible;
             transform: translateY(0);
         }
-
-        
-
-        
     }
-
-    
-
-    
 }

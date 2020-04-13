@@ -16,6 +16,11 @@
     &__paragraph{
         width: 55%;
 
+        @media only screen and (max-width: 62.5em) {
+            text-align: center;
+            width: 100%;
+        }
+
         @media only screen and (max-width: 50em) {
             width: 100%;
         }
