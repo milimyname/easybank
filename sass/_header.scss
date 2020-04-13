@@ -67,45 +67,11 @@
         
     }
 
-    // &__bg-desktop{
-    //     position: absolute;
-    //     right: -32rem;
-    //     top: 0;
-    //     width: 80%;
-    //     margin-top: -35vh;
-
-    //     @media only screen and (max-width: 50em) {
-    //         display: none;
-    //     }
-
-    // }
-
-    // &__bg-mobile{
-    //     display: none;
-
-    //     @media only screen and (max-width: 50em) {
-    //         display: block;
-    //         position: absolute;
-    //         right: 0;
-    //         top: 0;
-    //         width: 100%;
-    //         margin-top: -50vh;
-    //     }
-
-    //     @media only screen and (max-width: 37.5em) {
-    //         margin-top: -30vh;
-    //     }
-
-    //     @media only screen and (max-width: 25em) {
-    //         margin-top: -10vh;
-    //     }
-    // }
-
     &__img{
         position: relative;
         display: block;
         margin-left: 20%;
-        margin-top: 10vh;
+        margin-top: 20vh;
         z-index: 2;
 
         @media only screen and (max-width: 62.5em) {
