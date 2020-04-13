@@ -77,12 +77,12 @@
             margin-top: -55vh;
         }
 
-        @media only screen and (max-width: 31.25em) {
-            margin-top: -25vh;
+        @media only screen and (max-width: 37.5em) {
+            margin-top: -35vh;
         }
 
-        @media only screen and (max-width: 20.3125em) {
-            margin-top: -15vh;
+        @media only screen and (max-width: 25em) {
+            margin-top: -10vh;
         }
     }
 
@@ -101,9 +101,14 @@
                 margin-top: -20vh;
         }
 
-        @media only screen and (max-width: 31.25em) {
+        @media only screen and (max-width: 37.5em) {
+            width: 85%;
+            margin-top: -25vh;
+        }
+
+        @media only screen and (max-width: 25em) {
             width: 100%;
-            margin-top: -15vh;
+            margin-top: -10vh;
         }
 
     }
